@@ -76,7 +76,7 @@ The nth element also partitions the range into $\texttt{[begin, nth)}$, $\texttt
 
 \constraints{\texttt{(random\_access\_range, random\_access\_iterator)}}{\texttt{(random\_access\_range, random\_access\_iterator)}}{\texttt{operator<}}{\texttt{strict\_weak\_ordering}}
 
-Because of its selection/partitioning nature, \cpp{std::nth_element} offers a better theoretical complexity than \cpp{std::partial_sort} - $O(n)$ vs $O(n*logk)$.
+Because of its selection/partitioning nature, \cpp{std::nth_element} offers a better theoretical complexity than \cpp{std::partial_sort} - $O(n)$ vs $O(n*\log k)$.
 
 However, note that the standard only mandates average $O(n)$ complexity, and \cpp{std::nth_element} implementations can have high overhead, so always test to determine which provides better performance for your use case.
 

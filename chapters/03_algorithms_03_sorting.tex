@@ -158,7 +158,7 @@ The \cpp{std::partial_sort} algorithm reorders the range's elements such that th
 
 \constraints{\cpp{(random_access_range, random_access_iterator)}}{\cpp{(random_access_range, random_access_iterator)}}{\cpp{operator<}}{\texttt{strict\_weak\_ordering}}
 
-The benefit of using a partial sort is faster runtime — approximately $O(n*logk)$, where k is the number of elements sorted.
+The benefit of using a partial sort is faster runtime — approximately $O(n*\log k)$, where k is the number of elements sorted.
 
 \begin{codebox}[]{\href{https://compiler-explorer.com/z/j6xjM4GnT}{\ExternalLink}}
 \footnotesize Example of using \cpp{std::partial_sort} to sort the first three elements of a range.
